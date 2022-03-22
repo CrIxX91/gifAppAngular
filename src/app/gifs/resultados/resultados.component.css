@@ -1,0 +1,37 @@
+.figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.figure>img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+}
+
+.container {
+    columns: 200px;
+    column-gap: 10px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.frame {
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    padding: 4px;
+}
+
+.headercard {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    margin-top: 0.5rem;
+}
+
+.headercard p{
+    color: #005bea;
+    text-align: center;
+}
